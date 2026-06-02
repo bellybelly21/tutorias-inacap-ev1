@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Tutorías Inacap</title>
+    <link rel="icon" href="./src/img/favicon.ico" type="image/png">
+</head>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__logo">
+            <picture>
+                <img class="header__logo-img" 
+                     src="./src/img/Corporación_Instituto_Profesional_Inacap.svg.png" 
+                     alt="Logo Inacap">
+            </picture>
+            <span class="header__logo-text">Tutorías</span>
+        </div>
+
+        <!-- Botón hamburguesa para mobile -->
+        <button class="header__menu-btn" id="menuBtn" aria-label="Menú">
+            <span class="header__menu-icon"></span>
+            <span class="header__menu-icon"></span>
+            <span class="header__menu-icon"></span>
+        </button>
+
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="#" class="nav__link">Inicio</a></li>
+                <li><a href="#quienes-somos" class="nav__link">¿Quiénes somos?</a></li>
+                <li><a href="#beneficios" class="nav__link">Beneficios</a></li>
+                <li><a href="#tutores" class="nav__link">Tutores Destacados</a></li>
+                <li><a href="www.inacap.cl" target="_blank" class="nav__link nav__link--button">Inacap.cl</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+<section class="hero">
+    <div class="hero__content">
+        <h1 class="hero__title">Aprende de tus compañeros, destaca en tus asignaturas</h1>
+        <p class="hero__description">
+            El programa de Tutorías de INACAP conecta a estudiantes que necesitan apoyo académico 
+            con tutores destacados de semestres superiores. ¡Estudiar en equipo es más fácil!
+        </p>
+        <div class="hero__buttons">
+            <button class="hero__button hero__button--primary">Quiero un tutor</button>
+            <button class="hero__button hero__button--secondary">Quiero ser tutor</button>
+        </div>
+    </div>
+    
+    <!-- Imagen -->
+    <div class="hero__image-container">
+        <img class="hero__image" 
+             src="./src/img/hero.jpg" 
+             alt="Estudiantes estudiando juntos">
+        <div class="hero__image-overlay"></div>
+    </div>
+</section>
+
+        <!-- Sección ¿Quiénes Somos? -->
+<section class="about" id="quienes-somos">
+    <div class="about__content">
+        <span class="about__badge">¿Quiénes somos?</span>
+        <h2 class="about__title">Una iniciativa que nace desde <span class="about__highlight">estudiantes para estudiantes</span></h2>
+        <div class="about__description">
+            <p>Somos un equipo de estudiantes de tercer año de las carreras de Tecnología de la Información de INACAP. Movilizados por nuestra propia experiencia en la educación superior y conscientes de los desafíos que presentan las asignaturas de alta complejidad, decidimos diseñar y desarrollar esta plataforma de manera colaborativa.</p>
+            
+            <p>Nuestro objetivo es democratizar el acceso al apoyo académico mediante un ecosistema eficiente de tutorías "entre pares".</p>
+            
+            
+        </div>
+    </div>
+    
+    <div class="about__image-wrapper">
+        <div class="about__stats" style="margin-bottom:32px">
+                <div class="about__stat">
+                    <div class="about__stat-number" data-target="2024">2024</div>
+                    <div class="about__stat-label">Año de fundación</div>
+                </div>
+                <div class="about__stat">
+                    <div class="about__stat-number" data-target="50">50</div>
+                    <div class="about__stat-label">Tutores activos</div>
+                </div>
+                <div class="about__stat">
+                    <div class="about__stat-number" data-target="200">200</div>
+                    <div class="about__stat-label">Estudiantes atendidos</div>
+                </div>
+            </div>
+        <div class="about__image-container">
+            <img class="about__image" 
+                 src="./src/img/about.jpg" 
+                 alt="Estudiantes colaborando en equipo">
+            <div class="about__image-overlay"></div>
+        </div>
+        <div class="about__floating-card">
+            <div class="about__floating-icon">🎓</div>
+            <div class="about__floating-text">+3 años de experiencia</div>
+        </div>
+
+        
+    </div>
+</section>
+
+<!-- Sección Beneficios -->
+<section class="benefits" id="beneficios">
+    <div class="benefits__header">
+        <span class="benefits__badge">¿Por qué elegirnos?</span>
+        <h2 class="benefits__title">Beneficios de <span class="benefits__highlight">aprender con nosotros</span></h2>
+        <p class="benefits__subtitle">Descubre las ventajas de ser parte de nuestro programa de tutorías</p>
+    </div>
+
+    <div class="benefits__grid">
+        <!-- Tarjeta 1: Apoyo Personalizado -->
+        <div class="benefits__card">
+            <div class="benefits__card-icon">
+                <svg class="benefits__card-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 21V19C20 16.79 18.21 15 16 15H8C5.79 15 4 16.79 4 19V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 5L19 7L22 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3 class="benefits__card-title">Apoyo Personalizado</h3>
+            <p class="benefits__card-description">Tutores capacitados para tus necesidades específicas, con seguimiento individualizado y material adaptado a tu ritmo de aprendizaje.</p>
+            <div class="benefits__card-link">
+                <span>Saber más</span>
+                <svg class="benefits__card-arrow" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2: Horarios Flexibles -->
+        <div class="benefits__card">
+            <div class="benefits__card-icon">
+                <svg class="benefits__card-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 4V2M12 22V20M20 12H22M2 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 6L19.5 4.5M5.5 4.5L7 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3 class="benefits__card-title">Horarios Flexibles</h3>
+            <p class="benefits__card-description">Se adapta a tu jornada, sin incompatibilidad horaria. Elige el horario que mejor se ajuste a tus estudios y actividades.</p>
+            <div class="benefits__card-link">
+                <span>Saber más</span>
+                <svg class="benefits__card-arrow" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3: Confianza y Cercanía -->
+        <div class="benefits__card">
+            <div class="benefits__card-icon">
+                <svg class="benefits__card-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 10L10.5 12.5L16 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3 class="benefits__card-title">Confianza y Cercanía</h3>
+            <p class="benefits__card-description">Aprende sin miedo al juicio, en un ambiente entre pares. Comparte tus dudas con confianza y supera tus desafíos académicos.</p>
+            <div class="benefits__card-link">
+                <span>Saber más</span>
+                <svg class="benefits__card-arrow" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Tutores Destacados -->
+<section class="tutors" id="tutores">
+    <div class="tutors__header">
+        <span class="tutors__badge">Tutores Destacados</span>
+        <h2 class="tutors__title">Conoce a nuestros <span class="tutors__highlight">mejores tutores</span></h2>
+        <p class="tutors__subtitle">Profesionales comprometidos con tu éxito académico</p>
+    </div>
+
+    <!-- Wrapper para scroll horizontal -->
+    <div class="tutors__grid-wrapper">
+        <div class="tutors__grid">
+            <!-- Tutor 1 -->
+            <div class="tutors__card">
+                <div class="tutors__card-image">
+                    <img src="./src/img/photo-1539571696357-5a69c17a67c6.jpg" alt="Carlos Martínez">
+                    <div class="tutors__card-social">
+                        <a href="#" class="tutors__social-link">🔗</a>
+                    </div>
+                </div>
+                <div class="tutors__card-content">
+                    <h3 class="tutors__card-name">Carlos Martínez</h3>
+                    <div class="tutors__card-info">
+                        <span class="tutors__card-career">📚 Ing. Civil Informática</span>
+                        <span class="tutors__card-campus">📍 Sede Santiago</span>
+                        <span class="tutors__card-specialty">💻 Especialidad: Programación Avanzada</span>
+                    </div>
+                    <div class="tutors__card-rating">
+                        <div class="tutors__stars">
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                        </div>
+                        <span class="tutors__rating-value">5.0</span>
+                        <span class="tutors__reviews-count">(128 reseñas)</span>
+                    </div>
+                    <div class="tutors__testimonial">
+                        <p class="tutors__testimonial-text">
+                            "Carlos me ayudó a entender estructuras de datos de una manera increíble. Sus explicaciones son claras y siempre está dispuesto a resolver dudas."
+                        </p>
+                        <div class="tutors__testimonial-author">
+                            <span class="tutors__testimonial-name">— María González</span>
+                            <span class="tutors__testimonial-course">Estudiante de 2º año</span>
+                        </div>
+                    </div>
+                    <button class="tutors__card-button">Solicitar tutoría</button>
+                </div>
+            </div>
+
+            <!-- Tutor 2 -->
+            <div class="tutors__card">
+                <div class="tutors__card-image">
+                    <img src="./src/img/photo-1580489944761-15a19d654956.jpg" alt="Valentina Rojas">
+                    <div class="tutors__card-social">
+                        <a href="#" class="tutors__social-link">🔗</a>
+                    </div>
+                </div>
+                <div class="tutors__card-content">
+                    <h3 class="tutors__card-name">Valentina Rojas</h3>
+                    <div class="tutors__card-info">
+                        <span class="tutors__card-career">📊 Ingeniería en Data Science</span>
+                        <span class="tutors__card-campus">📍 Sede Concepción</span>
+                        <span class="tutors__card-specialty">📈 Especialidad: Estadística y Machine Learning</span>
+                    </div>
+                    <div class="tutors__card-rating">
+                        <div class="tutors__stars">
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                        </div>
+                        <span class="tutors__rating-value">4.9</span>
+                        <span class="tutors__reviews-count">(95 reseñas)</span>
+                    </div>
+                    <div class="tutors__testimonial">
+                        <p class="tutors__testimonial-text">
+                            "Valentina es una tutora excepcional. Gracias a ella pude aprobar estadística con excelentes notas. Sus métodos son muy prácticos."
+                        </p>
+                        <div class="tutors__testimonial-author">
+                            <span class="tutors__testimonial-name">— Pedro Sánchez</span>
+                            <span class="tutors__testimonial-course">Estudiante de 3º año</span>
+                        </div>
+                    </div>
+                    <button class="tutors__card-button">Solicitar tutoría</button>
+                </div>
+            </div>
+
+            <!-- Tutor 3 -->
+            <div class="tutors__card">
+                <div class="tutors__card-image">
+                    <img src="./src/img/photo-1507003211169-0a1dd7228f2d.jpg" alt="Diego Fernández">
+                    <div class="tutors__card-social">
+                        <a href="#" class="tutors__social-link">🔗</a>
+                    </div>
+                </div>
+                <div class="tutors__card-content">
+                    <h3 class="tutors__card-name">Diego Fernández</h3>
+                    <div class="tutors__card-info">
+                        <span class="tutors__card-career">🔐 Ingeniería en Ciberseguridad</span>
+                        <span class="tutors__card-campus">📍 Sede Valparaíso</span>
+                        <span class="tutors__card-specialty">🛡️ Especialidad: Redes y Seguridad Informática</span>
+                    </div>
+                    <div class="tutors__card-rating">
+                        <div class="tutors__stars">
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">☆</span>
+                        </div>
+                        <span class="tutors__rating-value">4.8</span>
+                        <span class="tutors__reviews-count">(87 reseñas)</span>
+                    </div>
+                    <div class="tutors__testimonial">
+                        <p class="tutors__testimonial-text">
+                            "Diego tiene un conocimiento impresionante sobre seguridad informática. Resolvió todas mis dudas sobre protocolos de red."
+                        </p>
+                        <div class="tutors__testimonial-author">
+                            <span class="tutors__testimonial-name">— Camila Torres</span>
+                            <span class="tutors__testimonial-course">Estudiante de 4º año</span>
+                        </div>
+                    </div>
+                    <button class="tutors__card-button">Solicitar tutoría</button>
+                </div>
+            </div>
+
+            <!-- Tutor 4 -->
+            <div class="tutors__card">
+                <div class="tutors__card-image">
+                    <img src="./src/img/photo-1438761681033-6461ffad8d80.jpg" alt="Fernanda López">
+                    <div class="tutors__card-social">
+                        <a href="#" class="tutors__social-link">🔗</a>
+                    </div>
+                </div>
+                <div class="tutors__card-content">
+                    <h3 class="tutors__card-name">Fernanda López</h3>
+                    <div class="tutors__card-info">
+                        <span class="tutors__card-career">🎨 Diseño UX/UI</span>
+                        <span class="tutors__card-campus">📍 Sede Viña del Mar</span>
+                        <span class="tutors__card-specialty">✨ Especialidad: Diseño de Interfaces</span>
+                    </div>
+                    <div class="tutors__card-rating">
+                        <div class="tutors__stars">
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                            <span class="tutors__star">★</span>
+                        </div>
+                        <span class="tutors__rating-value">5.0</span>
+                        <span class="tutors__reviews-count">(112 reseñas)</span>
+                    </div>
+                    <div class="tutors__testimonial">
+                        <p class="tutors__testimonial-text">
+                            "Fernanda transformó mi manera de diseñar. Sus feedbacks son increíblemente valiosos y siempre va más allá."
+                        </p>
+                        <div class="tutors__testimonial-author">
+                            <span class="tutors__testimonial-name">— Javier Moya</span>
+                            <span class="tutors__testimonial-course">Estudiante de 2º año</span>
+                        </div>
+                    </div>
+                    <button class="tutors__card-button">Solicitar tutoría</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__content">
+            <!-- Información del Estudiante -->
+            <div class="footer__student-info">
+                <div class="footer__logo">
+                    <img class="footer__logo-img" 
+                         src="./src/img/Corporación_Instituto_Profesional_Inacap.svg.png" 
+                         alt="Logo Inacap">
+                    <span class="footer__logo-text">Tutorías</span>
+                </div>
+                
+                <h3 class="footer__student-title">Información del Estudiante</h3>
+                
+                <div class="footer__student-details">
+                    <div class="footer__detail-item">
+                        <span class="footer__detail-icon">👨‍🎓</span>
+                        <div class="footer__detail-content">
+                            <span class="footer__detail-label">Nombre</span>
+                            <span class="footer__detail-value">Sybella Sandoval Soto</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__detail-item">
+                        <span class="footer__detail-icon">📧</span>
+                        <div class="footer__detail-content">
+                            <span class="footer__detail-label">Email Institucional</span>
+                            <span class="footer__detail-value">sybella.sandoval@inacapmail.cl</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__detail-item">
+                        <span class="footer__detail-icon">📚</span>
+                        <div class="footer__detail-content">
+                            <span class="footer__detail-label">Asignatura</span>
+                            <span class="footer__detail-value">Programación Front-End</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__detail-item">
+                        <span class="footer__detail-icon">🏫</span>
+                        <div class="footer__detail-content">
+                            <span class="footer__detail-label">Sección</span>
+                            <span class="footer__detail-value">TI3V31 Vespertino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enlaces a Redes Sociales -->
+            <div class="footer__social">
+                <h3 class="footer__social-title">Conéctate con nosotros</h3>
+                <p class="footer__social-description">Síguenos en nuestras redes sociales para estar al día con todas las novedades</p>
+                
+                <div class="footer__social-links">
+                    <a href="https://facebook.com" target="_blank" class="footer__social-link" aria-label="Facebook">
+                        <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                    
+                    <a href="https://instagram.com" target="_blank" class="footer__social-link" aria-label="Instagram">
+                        <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 11.37C16.1234 12.2022 15.9812 13.0522 15.5937 13.799C15.2062 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4077 15.9059C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09406 12.5923C7.96044 11.7616 8.09206 10.9099 8.47031 10.1584C8.84855 9.40684 9.45416 8.79381 10.201 8.40627C10.9478 8.01873 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2648 8.52146 14.8716 9.12836C15.4785 9.73526 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    
+                    <a href="https://linkedin.com" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+                        <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+
+                <!-- Información adicional -->
+                <div class="footer__additional">
+                    <p class="footer__additional-text">
+                        <span>📱 +56 9 1234 5678</span>
+                        <span>✉️ tutorias@inacap.cl</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                <p>&copy; 2026 Tutorías INACAP. Todos los derechos reservados.</p>
+                <div class="footer__legal">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </main>
+
+    <!-- Overlay independiente -->
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        // Seleccionar elementos del DOM
+        const menuBtn = document.getElementById('menuBtn');
+        const nav = document.getElementById('nav');
+        const overlay = document.getElementById('overlay');
+        
+        // Función para abrir menú
+        function openMenu() {
+            nav.classList.add('nav--active');
+            menuBtn.classList.add('header__menu-btn--active');
+            overlay.classList.add('overlay--active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Función para cerrar menú
+        function closeMenu() {
+            nav.classList.remove('nav--active');
+            menuBtn.classList.remove('header__menu-btn--active');
+            overlay.classList.remove('overlay--active');
+            document.body.style.overflow = '';
+        }
+        
+        // Función para toggle del menú
+        function toggleMenu() {
+            if (nav.classList.contains('nav--active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        }
+        
+        // Evento click en botón hamburguesa
+        menuBtn.addEventListener('click', toggleMenu);
+        
+        // Cerrar menú al hacer click en overlay
+        overlay.addEventListener('click', closeMenu);
+        
+        // Cerrar menú al hacer click en un enlace
+        const navLinks = document.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+        
+        // Cerrar menú al redimensionar a desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                closeMenu();
+            }
+        });
+    </script>
+
+</body>
+</html>
